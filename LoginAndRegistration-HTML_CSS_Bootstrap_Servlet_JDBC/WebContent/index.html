@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login OR Register</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body{
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        #login-form{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            margin-top: 250px;
+        }
+
+        #registration-form{
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            margin-top: 250px;
+        }
+
+        h2{
+            margin-bottom: -200px;
+        }
+
+        .container-1{
+            height: 100vh;
+            background-color:#e87b5f;
+        }
+
+        .container-2{
+            background-color: #ed603b;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 container-1">
+            <div style="margin-top: 200px;">
+                <h2 class="d-flex justify-content-center">Login Form</h2>
+                <form id="login-form" action="LoginServlet" method="post">
+                    Username:</label>
+                    <input type="text" name="username">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password">
+                    <input class="mt-2 btn btn-danger" type="submit" value="Login">
+                </form>
+            </div>
+        </div>
+    
+        <div class="col-lg-6 col-md-6 col-sm-6 container-2">
+            <div style="margin-top: 200px;">
+                <h2 class="d-flex justify-content-center">Registration Form</h2>
+                <form id="registration-form" action="RegistrationServlet" method="post">
+                    <label for="username">Username:</label>
+                    <input type="text" name="username">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password">
+                    <input class="mt-2 btn btn-warning" type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
